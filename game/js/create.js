@@ -84,5 +84,11 @@ function create(index) {
   player.setCollideWorldBounds(true);
   cursors = this.input.keyboard.createCursorKeys();
   
+
+  this.physics.add.collider(coins, platforms);
+  this.physics.add.collider(player, platforms);
+
+  this.physics.add.overlap(player, coins, collectCoin, null, this);
+  this.physics.add.overlap(player, trophy, DisplayLevelCompleted, null, this);
 }
 
