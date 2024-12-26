@@ -178,3 +178,17 @@ function DisplayLevelCompleted(player, prize){
     });
 }
 
+function destroyMaze(params) {
+    platforms.clear(true, true);
+    coins.clear(true, true);
+    trophy.clear(true, true);
+    level.destroy();
+    level = null;
+    timerText.destroy();
+    timerText = null;
+    scoreText.destroy();
+    scoreText = null;
+    score = 0;
+    
+}
+
