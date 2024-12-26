@@ -90,5 +90,50 @@ function create(index) {
 
   this.physics.add.overlap(player, coins, collectCoin, null, this);
   this.physics.add.overlap(player, trophy, DisplayLevelCompleted, null, this);
+
+  scoreText = this.add.text(60, 610, "score: 0", {
+    fontSize: "32px",
+    fill: "#ffffff",
+  });
+  
+  timerText = this.add.text(600, 610, "Time: " + timeLeft, {
+    fontSize: "32px",
+    fill: "#ffffff",
+  });
+  
+  if (timerEvent) {
+    timerEvent.remove();
+  }
+  
+  timerEvent = this.time.addEvent({
+    delay: 1000,
+    callback: () => {
+      if (timeLeft > 0) {
+        timeLeft--;
+        console.log(timeLeft);
+        if (timerText) {
+          timerText.setText("Time: " + timeLeft);
+        }
+      } else {
+        score = 0;
+        const gameOverBg = this.add.graphics();
+        gameOverBg.fillStyle(0x000000, 0.9);
+        gameOverBg.fillRect(200, 200, 400, 150);
+        puzzle += 1;
+        console.log(puzzle);
+        this.add.text(200, 250, " Game Over :(", {
+          fontSize: "48px",
+          fill: "#ff0000",
+          fontStyle: "bold",
+        });
+        this.time.delayedCall(1500, () => {
+          this.scene.restart();
+        });
+      }
+    },
+    callbackScope: this,
+    loop: true,
+  });
+  
 }
 
