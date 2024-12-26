@@ -134,6 +134,23 @@ function create(index) {
     callbackScope: this,
     loop: true,
   });
-  
+
+  if (index == 1) {
+    level = this.add.text(350, 610, "Easy", {
+      fontSize: "32px",
+      fill: "#ffffff",
+    });
+  } else if (index == 2) {
+    level = this.add.text(350, 610, "Medium", {
+      fontSize: "32px",
+      fill: "#ffffff",
+    });
+  } else if (index == 3) {
+    level = this.add.text(350, 610, "Hard", {
+      fontSize: "32px",
+      fill: "#ffffff",
+    });
+  }
+    
 }
 
