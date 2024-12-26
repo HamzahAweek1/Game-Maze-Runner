@@ -150,7 +150,31 @@ function create(index) {
       fontSize: "32px",
       fill: "#ffffff",
     });
-  }
-    
+  }    
+}
+
+function DisplayLevelCompleted(player, prize){
+    prize.disableBody(true, true);
+    levelCompleted = true;
+    destroyMaze();
+    player.setVelocity(0);
+
+    const levelCompletedBg = this.add.graphics();
+    levelCompletedBg.fillStyle(0, 0.9);
+    levelCompletedBg.fillRect(200, 200, 400, 150);
+
+    this.add.text(210, 250, "Level Completed ;)", {
+        fontSize: "36px",
+        fill: "#00ff00",
+        fontStyle: "bold",
+    });
+
+    this.time.delayedCall(1500, () =>{
+        if (index < 4) {
+            index += 1;
+        }
+        console.log(index);
+        this.create();
+    });
 }
 
