@@ -55,6 +55,34 @@ function create(index) {
       }
     }
   }
+
+  choosePlayer();
+
+  this.anims.create({
+    key: "left",
+    frames: this.anims.generateFrameNumbers(run, { start: 0, end: 3 }),
+    frameRate: 10,
+    repeat: -1,
+  });
+  
+  this.anims.create({
+    key: "turn",
+    frames: [{ key: run, frame: 4 }],
+    frameRate: 20,
+  });
+  
+  this.anims.create({
+    key: "right",
+    frames: this.anims.generateFrameNumbers(run, { start: 5, end: 8 }),
+    frameRate: 10,
+    repeat: -1,
+  });
+  
+  player = this.physics.add.sprite(30, 545, run);
+  player.setScale(0.7);
+  player.setBounce(0);
+  player.setCollideWorldBounds(true);
+  cursors = this.input.keyboard.createCursorKeys();
   
 }
 
