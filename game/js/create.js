@@ -19,9 +19,9 @@ function create(index) {
     this.add.image(400, 300, "sky");
   } else if (index === 2) {
     timeLeft = 45;
-    this.add.image(400, 300, "background-green1");
+    this.add.image(400, 300, "background1");
   } else {
-    this.add.image(400, 300, "background-brown1");
+    this.add.image(400, 300, "background2");
     timeLeft = 30;
   }
 

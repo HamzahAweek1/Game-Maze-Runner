@@ -3,17 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Maze Runner</title>
     <script src="//cdn.jsdelivr.net/npm/phaser@3.11.0/dist/phaser.js"></script>
+    <script src="../website/script.js" defer></script>
+    <script src="./js/loadUsername.js" defer></script>
   </head>
   <body>
-    <script src="./js/preload.js"></script>
-    <script src="./js/create.js"></script>
-    <script src="./js/game.js"></script>
+
+    <div>
+      <h2>
+        <h2 id="message" >Choose a Character:</h2>
+      </h2>
+      <div>
+        <div>
+          <button id="red"></button>
+          <button id="black"></button>
+          <button id="purple"></button>
+        </div>
+        <h2 id="level">Chosse a Difficulty Level</h2>
+        <div>
+          <button id="btn1">Easy</button>
+          <button id="btn2">Meduim</button>
+          <button id="btn3">Hard</button>
+        </div>
+      </div>
+      <canvas id="myCanvas"></canvas>
+    </div>
     <script src="./js/maze.js"></script>
-    <script src="./js/levels.js"></script>
-    <script src="./js/update.js"></script>
-    <script src="./js/functions.js"></script>
     <script src="./js/player.js"></script>
+    <script src="./js/preload.js"></script>
+    <script src="./js/functions.js"></script>
+    <script src="./js/create.js"></script>
+    <script src="./js/update.js"></script>
+    <script src="./js/game.js"></script>
+    <script src="./js/levels.js"></script>
   </body>
 </html>
