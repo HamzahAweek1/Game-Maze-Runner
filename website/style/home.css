@@ -11,3 +11,19 @@
     font-weight: normal;
     font-style: normal;
 }
+header{
+    height: 120vh;
+    background-color: var(--primary-color);
+    position: relative;
+}
+
+.nav-links{
+    font-family: 'SeymourOne', sans-serif;
+    flex: 3;
+}
+.logo{
+    font-family: 'SeymourOne',sans-serif;
+    font-size: 20px;
+    flex: 1;
+    align-items: center;
+}
