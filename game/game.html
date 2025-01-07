@@ -4,11 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maze Runner</title>
+    <link rel="stylesheet" href="../website/style/base.css">
+    <link rel="stylesheet" href="../website/style/colors.css">
+    <link rel="stylesheet" href="../website/style/home.css">
     <script src="//cdn.jsdelivr.net/npm/phaser@3.11.0/dist/phaser.js"></script>
     <script src="../website/script.js" defer></script>
     <script src="./js/loadUsername.js" defer></script>
   </head>
   <body>
+    <header id="header" class="header">
+      <nav class="flex">
+        <div class="flex column logo">
+          <div class="flex column logo-links">
+            <a href="../website/index.html#header">Maze</a>
+            <a href="../website/index.html#header">Runner</a>
+          </div>
+        </div>
+        <ul class="nav-links flex">
+          <li><a href="../website/index.html#guide"> Game's guide </a></li>
+          <li><a href="../website/index.html#characters"> Characters </a></li>
+          <li><a href="../website/index.html#tutorial"> Tutorial </a></li>
+          <li><a href="../website/index.html#about"> About </a></li>
+        </ul>
+        <div id="burger" class="burger column">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+    </header>
 
     <div>
       <h2>
