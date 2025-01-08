@@ -31,3 +31,18 @@ header{
   .black {
     background: url(http://127.0.0.1:5500/website/assets/images/charac-3.svg);
   }
+  .levels > button {
+    width: 251px;
+    height: 52px;
+    font-size: 24px;
+    border-radius: 100px;
+    color: var(--button-text);
+    background-color: var(--button-bg);
+  }
+  .wrap{
+    flex-wrap: wrap;
+  }
+  .levels{
+    margin-bottom: 10vh;
+    gap: 20px;
+  }
