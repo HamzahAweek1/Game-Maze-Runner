@@ -16,14 +16,37 @@ header{
     background-color: var(--primary-color);
     position: relative;
 }
-
+nav{
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    background-color: #f33030;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
 .nav-links{
     font-family: 'SeymourOne', sans-serif;
     flex: 3;
+}
+.nav-links > li{
+    margin-left: 50px;
+    transition: 1s;
+}
+.nav-links > li:hover{
+    transform: scale(1.1);
+}
+.nav-links li a{
+    color: white;
+    font-weight: bold;
 }
 .logo{
     font-family: 'SeymourOne',sans-serif;
     font-size: 20px;
     flex: 1;
     align-items: center;
+}
+.logo-links > a{
+    color: white;
+    font-weight: bold;
 }
