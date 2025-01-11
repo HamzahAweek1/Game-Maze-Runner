@@ -12,5 +12,5 @@ startButton.addEventListener("click", logger);
 start.addEventListener("click", logger);
 
 function logger() {
-  window.location.href = `../user.html`;
+  window.location.href = '../user.html';
 }

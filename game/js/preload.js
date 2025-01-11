@@ -1,15 +1,15 @@
 let images = [
-    "assets/character-grey.png",
-     "assets/character-red.png",
-      "assets/character-purple.png",
+    "game/assets/character-red.png",
+      "game/assets/character-grey.png",
+        "game/assets/character-purple.png",
 ];
 
 function preload() {
-    this.load.image("sky", "assets/sky.png");
-    this.load.image("background1", "assets/background-green1.jpg");
-    this.load.image("background2", "assets/background-brown1.png");
-    this.load.image("coin", "assets/star.png")
-    this.load.image("prize", "assets/prize.png");
+    this.load.image("sky", "game/assets/sky.png");
+    this.load.image("background1", "game/assets/background-green1.jpg");
+    this.load.image("background2", "game/assets/background-brown1.png");
+    this.load.image("coin", "game/assets/star.png")
+    this.load.image("prize", "game/assets/prize.png");
     this.load.spritesheet("red", images[0], {
         frameWidth: 32,
         frameHeight: 48,
@@ -22,5 +22,5 @@ function preload() {
         frameWidth: 32,
         frameHeight: 48,
       });
-      this.load.image("tile", "assets/tile.jpg");
+      this.load.image("tile", "game/assets/tile.jpg");
 }

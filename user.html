@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maze Runner</title>
+    <link rel="stylesheet" href="./website/style/base.css" />
+    <link rel="stylesheet" href="./website/style/home.css" />
+    <link rel="stylesheet" href="./website/style/colors.css" />
+    <link rel="stylesheet" href="./website/style/game.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body class="user">
+    <header id="header" class="header">
+      <nav class="flex">
+        <div class="logo flex column">
+            <div class="logo-links flex column">
+                <a href="./website/index.html#header">Maze</a>
+                <a href="./website/index.html#header">Runner</a>
+            </div>
+        </div>
+        <ul class="nav-links flex">
+            <li><a href="./website/index.html#guide">Game's Guide</a></li>
+            <li><a href="./website/index.html#characters">Charachters</a></li>
+            <li><a href="./website/index.html#tutorial">Tutorial</a></li>
+            <li><a href="./website/index.html#features">Future Features</a></li>
+        </ul>
+        <div id="burger" class="burger column">
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+            <div class="line line3"></div>
+        </div>
+    </nav>
+    </header>
+    <div class="flex row center main">
+      <div class="flex space-between column form half">
+        <h1>ENTER YOU NAME AND PLAY NOW!!</h1>
+        <div class="flex column center ">
+          <input type="text" placeholder="Username" id="username" />
+          <button class="start" id="start-btn">START</button>
+        </div>
+      </div>
+    </div>
+    <script src="../game/js/user.js"></script>
+  </body>
+</html>
