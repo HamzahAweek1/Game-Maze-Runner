@@ -207,3 +207,151 @@ footer{
     font-size: 16px;
     font-weight: bolder
 }
+/* Burger menu */
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger > .line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px;
+
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.burger.active .line1 {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger.active .line2 {
+    opacity: 0;
+}
+
+.burger.active .line3 {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+/* Responsiveness  */
+@media (max-width: 737px) {
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(10px);
+        justify-content: center;
+        align-items: center;
+        transform: translateX(100%);
+    }
+    .nav-links.active {
+        transform: translateX(0);
+    }
+    .nav-links li{
+        margin: 5%;
+    }
+    .active{
+        z-index: -1;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .burger {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .logo > a{
+        font-size: 20px;
+    }
+    .cloud-1,.cloud-2{
+        width: 200px;
+    }
+    .cloud-1{
+        top:300px;
+    } 
+    .cloud-2{
+        top:400px;
+    } 
+    .trees{
+        width: 100%;
+    }
+    .container > h1 {
+        font-size: 60px;
+    }
+    .guide > h1, .characters > h1, .tutorial > h1, .features > h1{
+        font-size: 50px;
+    }
+    .container > p, .guide > p, .characters > p, .tutorial > p, .features > p{
+        font-size: 18px;
+    }
+    .guide{
+        height: 180vh;
+    }
+    .features{
+        height: 140vh;
+    }
+    .characters{
+        height: 100vh;
+    }
+    .players > img{
+        width: 100px;
+        margin-bottom: 0px;
+    }
+    .tutorial > video{
+        width: 500px;
+    }
+    footer{
+        height: 100px;
+    }
+    .footer-container{
+        margin-left: 0px;
+        flex-direction: column;
+    }
+    .footer-container > ul > li{
+        margin-left: 0px;
+    }
+    .footer-h1 > h1{
+        font-size: 20px;
+    }
+    .footer-container > h1{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 418px) {
+    .half-maze{
+        display: none;
+    }
+    .half-maze-responsive{
+        display: block;
+        position: absolute;
+        top: 0px;
+        width: 100%;
+    }
+    .guide > h1, .characters > h1, .tutorial > h1, .features > h1{
+        font-size: 40px;
+    }
+    .container > h1 {
+        font-size: 50px;
+    }
+    .container > p, .guide > p, .characters > p, .tutorial > p, .features > p{
+        font-size: 15px;
+    }
+    .players > img{
+        margin-bottom: 50px;
+    }
+    .characters{
+        height: 140vh;
+    }
+    .tutorial > video{
+        width: 300px;
+    }
+}
