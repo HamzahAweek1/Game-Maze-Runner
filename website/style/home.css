@@ -52,6 +52,14 @@ nav{
     font-weight: bold;
 } 
 /* Header-images */
+.half-maze{
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.half-maze-responsive{
+    display: none;
+}
 .cloud-1{
     position: absolute;
     top: 200px;
@@ -79,7 +87,7 @@ nav{
     font-size: 80px;
     line-height: 55px;
 }
-.container > p, .characters > p, .tutorial > p, .features > p{
+.container > p, .guide > p, .characters > p, .tutorial > p, .features > p{
     font-family: 'Sintony',sans-serif;
     width: 50vw;
     font-size: 30px;
@@ -104,15 +112,8 @@ nav{
 }
 .guide > h1, .characters > h1, .tutorial > h1,.features > h1{
     font-family: 'SeymourOne',sans-serif;
-    font-size: 40px;
-}
-.guide > p{
-    font-family: 'Sintony',sans-serif;
-    color: var(--text-color);
-    width: 50vw;
-    font-size: 20px;
-    text-align: center;
-    margin: 50px;
+    font-size: 60px;
+    line-height: 55px;
 }
 .cards{
     width: 100%;
