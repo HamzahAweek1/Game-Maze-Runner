@@ -182,3 +182,28 @@ nav{
     background-size: cover;
     background-image: url(../assets/images/parallax.svg);
 }
+/* Footer */
+footer{
+    background-color: #4AA568;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    height: 60px;
+    font-weight: bold;
+}
+.footer-container{
+    margin-left: 200px;
+}
+.footer-container > ul{
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-container > ul > li{
+    margin-left: 20px;
+}
+.footer-h1 > h1{
+    font-family: 'SeymourOne',sans-serif;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bolder
+}
