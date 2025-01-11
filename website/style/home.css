@@ -79,7 +79,7 @@ nav{
     font-size: 80px;
     line-height: 55px;
 }
-.container > p{
+.container > p, .characters > p{
     font-family: 'Sintony',sans-serif;
     width: 50vw;
     font-size: 30px;
@@ -88,7 +88,7 @@ nav{
     margin: 50px;
     z-index: 1;
 }
-.container > button{
+.container > button, .characters > button{
     font-family: "Sintony", sans-serif;
     background-color: var(--button-bg);
     width: 251px;
@@ -102,7 +102,7 @@ nav{
     background-color: var(--background-color);
     height: 90vh;
 }
-.guide > h1{
+.guide > h1, .characters > h1{
     font-family: 'SeymourOne',sans-serif;
     font-size: 40px;
 }
@@ -144,4 +144,25 @@ nav{
 .card > p{
     font-family: 'Sintony',sans-serif;
     color: var(--text-color);
+}
+/* Characters Section */
+.characters{
+    background-color: var(--secondary-color);
+    height: 90vh;
+}
+.players{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.players > img{
+    width: 80px;
+    margin-left: 50px;
+    margin-right: 50px;
+    transition: 1s;
+}
+.players > img:hover{
+    transform: scale(1.5);
 }
