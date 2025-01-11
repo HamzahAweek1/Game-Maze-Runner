@@ -234,6 +234,33 @@ footer{
     transform: rotate(-45deg) translate(5px, -5px);
 }
 /* Responsiveness  */
+@media (min-width: 737px) and (max-width: 1096px) {
+    .guide{
+        height: 140vh;
+    }
+
+    .features, .characters{
+        height: 90vh;
+    }
+
+    .container > h1 {
+        font-size: 70px;
+    }
+    
+    .container > p, .guide > p, .characters > p, .tutorial > p, .features > p{
+        font-size: 25px;
+    }
+
+    .cloud-1,.cloud-2{
+        width: 300px;
+    }
+    .cloud-1{
+        top:300px;
+    } 
+    .cloud-2{
+        top:400px;
+    } 
+}
 @media (max-width: 737px) {
     .nav-links {
         display: flex;
@@ -324,6 +351,11 @@ footer{
     .footer-container > h1{
         font-size: 20px;
         margin-bottom: 10px;
+    }
+}
+@media (max-width: 600px) {
+    .tutorial > video{
+        width: 350px;
     }
 }
 @media (max-width: 418px) {
