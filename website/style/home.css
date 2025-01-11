@@ -79,7 +79,7 @@ nav{
     font-size: 80px;
     line-height: 55px;
 }
-.container > p, .characters > p{
+.container > p, .characters > p, .tutorial > p, .features > p{
     font-family: 'Sintony',sans-serif;
     width: 50vw;
     font-size: 30px;
@@ -98,11 +98,11 @@ nav{
     color: var(--button-text);
 }
 /* Guide section */
-.guide{
+.guide, .features{
     background-color: var(--background-color);
     height: 90vh;
 }
-.guide > h1, .characters > h1{
+.guide > h1, .characters > h1, .tutorial > h1,.features > h1{
     font-family: 'SeymourOne',sans-serif;
     font-size: 40px;
 }
@@ -165,4 +165,20 @@ nav{
 }
 .players > img:hover{
     transform: scale(1.5);
+}
+/* tutorial section */
+.tutorial{
+    height: 90vh;
+}
+.tutorial > video{
+    border-radius: 12px;
+}
+/* Parallax effect */
+.parallax {
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../assets/images/parallax.svg);
 }
